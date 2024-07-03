@@ -36,6 +36,8 @@
      - create `chrome` directory at profile
      - download the `userChrome.css`, `userContent.css`, and `userVariables.css` files from the latest release
      - copy the files into the `chrome` directory
+     - inside the `chrome` directory create a symbolic link to the pywal generated colors.css
+       <code>ln -s /home/$USER/.cache/wal/colors.css<code\>
   4. Restart Firefox
 
 To update, repeat steps 2-4. `userVariables.css` does NOT need to be replaced.
