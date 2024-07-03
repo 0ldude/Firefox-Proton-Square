@@ -1,40 +1,45 @@
 /* imports the user facing variables */
 @import url(userVariables.css);
 
-
-
 /* CUSTOM ACCENT COLORS -------------------------------------------------------------------------------------- */
 
 :root {
-  --lwt-toolbarbutton-icon-fill-attention: var(--custom-accent-color, #0a84ff) !important;
-  --button-primary-bgcolor: var(--custom-accent-color, #0a84ff) !important;
-  --button-primary-hover-bgcolor: color-mix(in srgb, white 50%, var(--custom-accent-color, #0a84ff)) !important;
-  --button-primary-active-bgcolor: color-mix(in srgb, white 65%, var(--custom-accent-color, #0a84ff)) !important;
-  --buttons-primary-button-bgcolor: var(--custom-accent-color, #0a84ff) !important;
-  --buttons-primary-button-hover-bgcolor: color-mix(in srgb, white 50%, var(--custom-accent-color, #0a84ff)) !important;
-  --buttons-primary-button-active-bgcolor: color-mix(in srgb, white 65%, var(--custom-accent-color, #0a84ff)) !important;
-  --button-background-color-primary: var(--custom-accent-color, #0a84ff) !important;
-  --button-background-color-primary-hover: color-mix(in srgb, white 50%, var(--custom-accent-color, #0a84ff)) !important;
-  --button-background-color-primary-active: color-mix(in srgb, white 65%, var(--custom-accent-color, #0a84ff)) !important;
-  --brand-color-accent: var(--custom-accent-color, #0a84ff) !important;
-  --brand-color-accent-hover: color-mix(in srgb, white 50%, var(--custom-accent-color, #0a84ff)) !important;
-  --brand-color-accent-active: var(--custom-accent-color, #0a84ff) !important;
-  --tab-attention-icon-color: var(--custom-accent-color, #0a84ff) !important;
-  --checkbox-checked-bgcolor: var(--custom-accent-color, #0a84ff) !important;
-  --checkbox-checked-hover-bgcolor: color-mix(in srgb, white 50%, var(--custom-accent-color, #0a84ff)) !important;
-  --checkbox-checked-active-bgcolor: color-mix(in srgb, white 65%, var(--custom-accent-color, #0a84ff)) !important;
-  --lwt-brighttext-url-color: var(--custom-accent-color, #0a84ff) !important;
-  --lwt-popup-brighttext-url-color: var(--custom-accent-color, #0a84ff) !important;
-  --focus-outline-color: var(--custom-accent-color, #0a84ff) !important;
-  --toolbar-field-focus-border-color: var(--custom-accent-color, #0a84ff) !important;
+  --lwt-toolbarbutton-icon-fill-attention: var(--custom-accent-color, --color1) !important;
+  --button-primary-bgcolor: var(--custom-accent-color, --color1) !important;
+  --button-primary-hover-bgcolor: var(--custom-accent-color, --color1) !important;
+  --button-primary-active-bgcolor: var(--custom-accent-color, --color1) !important;
+  --buttons-primary-button-bgcolor: var(--custom-accent-color, --color1) !important;
+  --buttons-primary-button-hover-bgcolor: var(--custom-accent-color, --color1) !important;
+  --buttons-primary-button-active-bgcolor: var(--custom-accent-color, --color1) !important;
+  --button-background-color-primary: var(--custom-accent-color, --color1) !important;
+  --button-background-color-primary-hover: var(--custom-accent-color, --color1) !important;
+  --button-background-color-primary-active:  var(--custom-accent-color, --color1) !important;
+  --brand-color-accent: var(--custom-accent-color, --color1) !important;
+  --brand-color-accent-hover: var(--custom-accent-color, --color1) !important;
+  --brand-color-accent-active: var(--custom-accent-color, --color1) !important;
+  --tab-attention-icon-color: var(--custom-accent-color, --color1) !important;
+  --checkbox-checked-bgcolor: var(--custom-accent-color, --color1) !important;
+  --checkbox-checked-hover-bgcolor: var(--custom-accent-color, --color1) !important;
+  --checkbox-checked-active-bgcolor: var(--custom-accent-color, --color1) !important;
+  --lwt-brighttext-url-color: var(--custom-accent-color, --color1) !important;
+  --lwt-popup-brighttext-url-color: var(--custom-accent-color, --color1) !important;
+  --focus-outline-color: var(--custom-accent-color, --color1) !important;
+  --toolbar-field-focus-border-color: var(--custom-accent-color, --color1) !important;
   /*Star Highlight & Download Finished*/
-  --lwt-toolbarbutton-icon-fill-attention: var(--custom-accent-color, #0a84ff) !important;
-  --lwt-toolbar-field-icon-fill-attention: var(--custom-accent-color, #0a84ff) !important;
+  --lwt-toolbarbutton-icon-fill-attention: var(--custom-accent-color, --color1) !important;
+  --lwt-toolbar-field-icon-fill-attention: var(--custom-accent-color, --color1) !important;
+}
+
+#urlbar-background{
+  background-color: color-mix(in srgb, var(--color0), var(--color1)) !important;
+}
+#urlbar{
+  color: var(--color15)!important;
 }
 
 .urlbarView-url,
 .popup-notification-learnmore-link.text-link {
-  color: var(--custom-accent-color, #0a84ff) !important;
+  color: var(--custom-accent-color, --color1) !important;
 }
 
 /* colors various popup windows (e.g. edit bookmarks, close window menus) */
@@ -45,40 +50,40 @@
   html:not([role="dialog"]) body.activity-stream,
   window:not([chromehidden]),
   window:not([chromehidden])>dialog {
-    --in-content-primary-button-background: var(--custom-accent-color, #0a84ff) !important;
-    --in-content-primary-button-background-hover: color-mix(in srgb, white 50%, var(--custom-accent-color, #0a84ff)) !important;
-    --in-content-primary-button-background-active: color-mix(in srgb, white 65%, var(--custom-accent-color, #0a84ff)) !important;
+    --in-content-primary-button-background: var(--custom-accent-color, --color1) !important;
+    --in-content-primary-button-background-hover: var(--custom-accent-color, --color1) !important;
+    --in-content-primary-button-background-active: var(--custom-accent-color, --color1) !important;
   }
 }
 
 /* color report broken side link */
 #report-broken-site-popup-send-more-info-link {
-  color: var(--custom-accent-color, #0a84ff) !important;
+  color: var(--custom-accent-color, --color1) !important;
 }
 
 /* color the update/info dot in app menu */
 :root {
-  --panel-banner-item-info-icon-bgcolor: var(--custom-accent-color, #0a84ff) !important;
-  --panel-banner-item-update-supported-bgcolor: var(--custom-accent-color, #0a84ff) !important;
+  --panel-banner-item-info-icon-bgcolor: var(--custom-accent-color, --color1) !important;
+  --panel-banner-item-update-supported-bgcolor: var(--custom-accent-color, --color1) !important;
 }
 
 
 /* color the left strip in notification banners (purple-yellow gradient -> accent color) */
 .infobar::before {
-  background-image: linear-gradient(var(--custom-accent-color, #0a84ff), var(--custom-accent-color, #0a84ff)) !important;
+  background-image: linear-gradient(var(--custom-accent-color, --color1), var(--custom-accent-color, --color1)) !important;
 }
 
 
 /* color the password autofill highlight color on click */
 .autocomplete-richlistitem {
   &[selected] {
-    background-color: color-mix(in srgb, white 15%, var(--custom-accent-color, #0a84ff)) !important;
+    background-color: var(--custom-accent-color, --color1) !important;
   }
 }
 
 /* color the "manage themes" link on the customize page */
 #customization-lwtheme-link.text-link {
-  color: var(--custom-accent-color, #0a84ff) !important;
+  color: var(--custom-accent-color, --color1) !important;
 }
 
 /* replace the mozilla purple to yellow gradient in appmenu */
@@ -92,13 +97,13 @@
 
 /* Dark Theme */
   {
-  --panel-separator-zap-gradient: linear-gradient(var(--custom-accent-color, #0a84ff), var(--custom-accent-color, #0a84ff)) !important;
+  --panel-separator-zap-gradient: linear-gradient(var(--custom-accent-color, --color1), var(--custom-accent-color, --color1)) !important;
 }
 
 /* can be manually overridden by pref */
 @media (-moz-bool-pref: "browser.appmenugradient.overwrite") {
   :root {
-    --panel-separator-zap-gradient: linear-gradient(var(--custom-accent-color, #0a84ff), var(--custom-accent-color, #0a84ff)) !important;
+    --panel-separator-zap-gradient: linear-gradient(var(--custom-accent-color, --color1), var(--custom-accent-color, --color1)) !important;
   }
 }
 
@@ -143,13 +148,17 @@ otherwise will change height when tabs overflow [FIXED] */
 /* tab height when playing audio issue fixed in FF 96.0.2+ */
 /* https://bugzilla.mozilla.org/show_bug.cgi?id=1714276 */
 /* height change when tab overflow fixed in FF 97 beta+ */
-/* #TabsToolbar {height: var(--tab-bar-height, 35px) !important;} */
-/* :root{ */
+#TabsToolbar {
+height: var(--tab-bar-height, 30px) !important;
+--inline-tab-padding: 3px;
+--tab-padding: 3px;
+}
+:root{
 /* default value for tab-min-height = 36px */
-/* --tab-min-height: var(--tab-bar-height, 35px) !important; */
-/* } */
-/* .toolbar-items {height: var(--tab-bar-height, 35px) !important;} */
-/* .tabbrowser-tab {height: var(--tab-bar-height, 35px) !important;} */
+--tab-min-height: var(--tab-bar-height, 30px) !important; 
+}
+.toolbar-items {height: var(--tab-bar-height, 30px) !important;}
+.tabbrowser-tab {height: var(--tab-bar-height, 30px) !important;}
 
 
 
@@ -166,8 +175,15 @@ otherwise will change height when tabs overflow [FIXED] */
 /* Tab - Connect to window */
 .tab-background {
   border-radius: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  border-top: 1px !important;
+  border-left: 1px !important;
+  border-right: 1px !important;
+  border-bottom: 1px !important;
+  background: var(--color0);
 }
 
 .tab-content {
@@ -183,7 +199,7 @@ otherwise will change height when tabs overflow [FIXED] */
 
 /* adds the little colored strip on top of the selected tab */
 .tab-background:is([selected], [multiselected]) {
-  box-shadow: inset 0 2px var(--custom-accent-color, #0a84ff) !important;
+  background-color: var(--color1) !important;
   border: 0 !important;
   outline: none !important;
   background-repeat: no-repeat !important;
@@ -248,7 +264,7 @@ tab[class*="identity-color"][selected="true"]>.tab-stack>.tab-background:is([sel
   z-index: 1;
   width: 0px;
   height: 100%;
-  border-right: 1px solid var(--custom-tab-divider-color, #535354);
+  border-right: 1px solid var(--custom-tab-divider-color, --color15);
 }
 
 .tab-stack::after {
@@ -272,9 +288,9 @@ tab[class*="identity-color"][selected="true"]>.tab-stack>.tab-background:is([sel
 
 :root {
   /* reduce padding between menu items */
-  --arrowpanel-menuitem-padding: var(--custom-menuitem-padding-vertical, 6px) var(--custom-menuitem-padding-horizontal, 8px) !important;
-  --arrowpanel-menuitem-margin: 0 var(--custom-menuitem-margin, 4px) !important;
-  --panel-subview-body-padding: var(--custom-menuitem-margin, 4px) 0 !important;
+  --arrowpanel-menuitem-padding: var(--custom-menuitem-padding-vertical, 6px) var(--custom-menuitem-padding-horizontal, 6px) !important;
+  --arrowpanel-menuitem-margin: 0 var(--custom-menuitem-margin, 3px) !important;
+  --panel-subview-body-padding: var(--custom-menuitem-margin, 3px) 0 !important;
 
 
   /* square the off most of the UI (selection buttons on hover, context menus, hamburger menus, etc) */
@@ -318,7 +334,7 @@ tab[class*="identity-color"][selected="true"]>.tab-stack>.tab-background:is([sel
 
 /* more padding code for sub menus */
 .panel-header {
-  padding: var(--custom-menuitem-margin, 4px) !important;
+  padding: var(--custom-menuitem-margin, 3px) !important;
   padding-bottom: 0 !important;
 }
 
@@ -446,7 +462,7 @@ menulist {
 /* square the selection in the "List All Tabs" menu */
 .all-tabs-item {
   border-radius: 0 !important;
-  margin-inline: var(--custom-menuitem-margin, 4px) !important;
+  margin-inline: var(--custom-menuitem-margin, 3px) !important;
 }
 
 
@@ -596,7 +612,7 @@ notification-message {
 /* THUNDERBIRD SPECIFIC ------------------------------------------------------------------------------ */
 /* custom color for tab line */
 :root {
-  --tabline-color: var(--custom-accent-color, #0a84ff) !important;
+  --tabline-color: var(--custom-accent-color, --color1) !important;
 }
 
 /* the loading/compacting progress bar on bottom right */
@@ -615,6 +631,6 @@ notification-message {
 /* https://www.reddit.com/r/FirefoxCSS/comments/o6q5i4/detect_each_os_lightdark_theme/ */
 
 /* .tab-background[selected]:not([multiselected="true"]):-moz-lwtheme {
-  outline: 1px solid var(--custom-accent-color, #0a84ff) !important;
+  outline: 1px solid var(--custom-accent-color, --color1) !important;
   outline-offset: -1px !important;
 } */
