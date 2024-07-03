@@ -3,7 +3,7 @@
 
 
 
-![Sample Screenshot of Theme](https://raw.githubusercontent.com/leadweedy/Firefox-Proton-Square/main/images/ff_protonbutquantum.png "Sample Screenshot")
+![Sample Screenshot of Theme](https://raw.githubusercontent.com/0ldude/Firefox-Proton-Square/main/images/firefox.png "Sample Screenshot")
 
   If you hate rounded corners like me, this is for you. Only square corners.
   
@@ -13,7 +13,7 @@
 
 **Tab & Menu Design**
   - Square corners
-  - Colored context line above selected tab
+  - Colored background in selected tab
   - Divide Line between tabs
 
 **Custom Accent Color**
